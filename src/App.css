@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+
+body {
+  background: linear-gradient(to right, #ff7eb9, #8ac4ff);
+  font-family: Arial, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-custom {
+  border: 2px solid #f06292; 
+  background: linear-gradient(to bottom right, #81d4fa, #ff7eb9); /* Pink to sky blue gradient */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100%; 
 }
 
-.App-link {
-  color: #61dafb;
+.card-custom .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-custom .card-image {
+  height: 200px; 
+  object-fit: cover; 
+}
+
+.btn-custom {
+  background-color: #f06292; 
+  border-color: #f06292;
+}
+
+.btn-custom:hover {
+  background-color: #81d4fa; 
+  border-color: #81d4fa;
+}
+
+
+.navbar-custom {
+  border-bottom: 2px solid #f06292; 
+}
+
+.container-custom {
+  background: linear-gradient(to bottom right, #f06292, #81d4fa);
+  padding: 20px;
+  border-radius: 10px;
 }
